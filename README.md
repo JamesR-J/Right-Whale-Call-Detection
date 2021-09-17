@@ -5,6 +5,7 @@ talk about using kaggle dataset so had to preprocess cus in .aiff and that tf fu
 also since was doing this, wasn't hard to put files into folders so could use flow from direcotry rather than flow from dataframe, literally no reason just was easy
 then say provided my processed dataset too for ease for some people, ie the processing took like 48hrs or something stupid
 talk about no labels on test data so it was unusable basically
+mention based on the tensorflow speech recognition walktrhough
 
 future plans:
 maybe a way to detet diff whales like personal id
