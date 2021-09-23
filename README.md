@@ -12,6 +12,8 @@ maybe a way to detet diff whales like personal id
 improve the model for further performance
 try it for other whale call datasets, thers a minke one to look at 
 
+as my first project i leavees a lot to be desired but was a good step in beginning to understand how to use tensorflow and other things
+
 
 ## Usage
 1) Either download the Kaggle Dataset and use data_processing.py to convert the .aiff files into .wav. Or download the compressed data folder and use that.
