@@ -31,7 +31,6 @@ try it for other whale call datasets, thers a minke one to look at
 * Seaborn
 
 ## Next Steps:
-* Improve ratings system of tracks. eg rate out of 10 rather than just binary
-* Create my own recommendation system rather than relying on Spotipys .
-* Since some songs have a changing tempo Spotify averages out this BPM range, this can lead to some wrong songs making it through the BPM cut! Ideally a way to figure out the mode BPM of a song would be beneficial. This is a fairly large issue for me as a lot of Hardcore (one of my fave genres) has lots of tempo breakdowns.
-* Run more so I can get some more data, aswell as track if the playlist helps improve times!!
+* ALthough it currently works well it needs a whole redesign to properly work, ie using binary calssification etc etc
+* try about with masking and preprocessing of the files to enable better accuracy
+* more hyper paramater tuning to optimise the process
