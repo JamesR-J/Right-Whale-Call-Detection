@@ -1,28 +1,20 @@
 # Right-Whale-Call-Detection
-Model to predict whether an audio sample contains a North Atlantic Right Whale call
+Model to predict whether an audio sample contains a North Atlantic Right Whale call.
 
-talk about using kaggle dataset so had to preprocess cus in .aiff and that tf function uses wav
-also since was doing this, wasn't hard to put files into folders so could use flow from direcotry rather than flow from dataframe, literally no reason just was easy
-then say provided my processed dataset too for ease for some people, ie the processing took like 48hrs or something stupid
-talk about no labels on test data so it was unusable basically
-mention based on the tensorflow speech recognition walktrhough
+This is one of my first projects so it leaves a lot to be desired but it was a good step in understanding the basics of Tensorflow! It is heavily based off the [Tensorflow Simple Audio Recognition](https://www.tensorflow.org/tutorials/audio/simple_audio) guide but applied to recognise whale calls using the [Kaggle Right Whale Dataset](https://www.kaggle.com/c/whale-detection-challenge/data).
 
-future plans:
-maybe a way to detet diff whales like personal id
-improve the model for further performance
-try it for other whale call datasets, thers a minke one to look at 
+Due to the Kaggle dataset using .aiff files and the Tensorflow primarily based in .wav files, all the files had to be converted. The data_processing.py was used to do this but it takes a very long time to run (think around 24hr)! I also split the files into subfolders so that flow_from_directory could be used, although this wasn't a necessary step since flow_from_dataframe could also work. With this dataset there is also a test folder but since there are no labels for them it wasn't very useful.
 
-as my first project i leavees a lot to be desired but was a good step in beginning to understand how to use tensorflow and other things
+Although this model produces a good accuracy it is definitely a very limited entry point into the field. Some further improvements I aim to work on are listed below:
+* Further model refinement and hyper-parameter tuning.
+* Remodelling the functions and Neural Network to be binary based since it is just a yes or no problem, currently it is working as a categorical problem.
+* See if the model translates to other datasets, there is a relevent [Minke Whale Dataset](http://www.soest.hawaii.edu/ore/dclde/dataset/).
+* Try some masking and preprocessing of files to enable better accuracy as seen in the [winning solution](https://github.com/jaimeps/whale-sound-classification).
 
 
 ## Usage
-1) Either download the Kaggle Dataset and use data_processing.py to convert the .aiff files into .wav. Or download the compressed data folder and use that.
-2) Work through XXX
-
-## Requirements to run:
-* Spotify account
-* Garmin Connect account
-* Install the required libraries below
+1) Download the Kaggle Dataset and use data_processing.py to convert the .aiff files into .wav
+2) Work through whale_detection.ipynb
 
 ## Libraries:
 * pandas
@@ -31,8 +23,3 @@ as my first project i leavees a lot to be desired but was a good step in beginni
 * Keras
 * natsort
 * Seaborn
-
-## Next Steps:
-* ALthough it currently works well it needs a whole redesign to properly work, ie using binary calssification etc etc
-* try about with masking and preprocessing of the files to enable better accuracy
-* more hyper paramater tuning to optimise the process
